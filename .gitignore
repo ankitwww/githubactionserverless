@@ -17,7 +17,7 @@ bin/
 node_modules/
 *.xml
 !sitemap.xml
-
+.env
 *.map
 .happypack/
 *.map
