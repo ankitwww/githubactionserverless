@@ -1,13 +1,13 @@
 name: Deploy master branch
 on:
-    push:
-      branches:
-        - master
-  jobs:
-    deploy:
-      name: deploy
-      runs-on: ubuntu-latest
-      steps:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@master
       - name: npm install
         uses: actions/npm@master
