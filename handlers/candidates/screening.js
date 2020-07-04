@@ -8,10 +8,10 @@ let JobApplication = null;
 
 module.exports.notCompleted = async (event, context, callback) => {
   context.callbackWaitsForEmptyEventLoop = false;
-  var startDate = new Date();
-  var startTime = startDate.getTime();
+  var endDate = new Date();
+  var endTime = endDate.getTime();
   var oneDay = 24 * 60 * 60 * 1000;
-  var endTime = startTime + oneDay;
+  var startTime = endTime - oneDay;
 
   try {
     if (conn == null) {
