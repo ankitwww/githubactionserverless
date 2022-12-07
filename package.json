@@ -12,6 +12,6 @@
     "dotenv": "^8.2.0",
     "mongoose": "^5.9.21",
     "querystring": "^0.2.0",
-    "serverless": "^1.74.1"
+    "serverless": "^3.25.1"
   }
 }
